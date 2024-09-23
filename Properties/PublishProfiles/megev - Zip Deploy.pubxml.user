@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARFhTw1KFHka+7lyTdNblBQAAAAACAAAAAAAQZgAAAAEAACAAAAB46bj7qlob/0KzFjuzQIpU1Jj8hP2oDsrtckEBhLWDPgAAAAAOgAAAAAIAACAAAAAe3BNaSMlK8mG5Y4nWwnALPP+F0o8UH3Rlmxw64sXtj4AAAAA6QaaYmz9LuzlGPbGw14Uvc2HVlrYtINfgc/prlqUuJLQMnE8J5vE78p3F5phEvh2z6eBwRDIzA6IQqoV4ELOUsL2IxUfbjEQ0z+vAVmYUQDBbuXUu6oyb1tzeZR5wIKK9y+n9SauM6opIu2IY8JblSu32sz64DiL3EukIcXx4VEAAAABLIR+xemZrgkHXs2dhiU1sIisHSAadezULLqADROMQHQF6wlQt1VXR29DhEUYGrS1fsBgwuFM5uc2nD0oV4CLb</EncryptedPassword>
+    <History>True|2024-08-28T17:12:16.6007938Z||;True|2024-08-28T13:31:49.2502184-03:00||;True|2024-08-26T20:28:46.8279977-03:00||;True|2024-08-26T20:15:19.7818993-03:00||;True|2024-08-26T20:09:27.4065621-03:00||;True|2024-08-21T22:26:37.2416302-03:00||;True|2024-08-21T20:54:12.8891730-03:00||;True|2024-08-21T20:43:19.9346114-03:00||;True|2024-08-21T19:42:18.6041333-03:00||;True|2024-08-21T19:40:56.7117002-03:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

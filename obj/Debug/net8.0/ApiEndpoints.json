@@ -1,0 +1,861 @@
+[
+  {
+    "ContainingType": "megev.Endpoints.CategoriaProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsCategoriaProduto\u003Eb__0_0",
+    "RelativePath": "categorias-produto/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[megev.Models.CategoriaProduto, ApiMegev, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.CategoriaProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsCategoriaProduto\u003Eb__0_2",
+    "RelativePath": "categorias-produto/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoriaProduto",
+        "Type": "megev.Models.CategoriaProduto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.CategoriaProduto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.CategoriaProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsCategoriaProduto\u003Eb__0_1",
+    "RelativePath": "categorias-produto/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.CategoriaProduto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.CategoriaProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsCategoriaProduto\u003Eb__0_3",
+    "RelativePath": "categorias-produto/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "categoriaProduto",
+        "Type": "megev.Models.CategoriaProduto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.CategoriaProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsCategoriaProduto\u003Eb__0_4",
+    "RelativePath": "categorias-produto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.LojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsLoja\u003Eb__0_0",
+    "RelativePath": "lojas/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[megev.Models.Loja, ApiMegev, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.LojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsLoja\u003Eb__0_2",
+    "RelativePath": "lojas/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loja",
+        "Type": "megev.Models.Loja",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.Loja",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.LojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsLoja\u003Eb__0_1",
+    "RelativePath": "lojas/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.Loja",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.LojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsLoja\u003Eb__0_3",
+    "RelativePath": "lojas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "loja",
+        "Type": "megev.Models.Loja",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.LojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsLoja\u003Eb__0_4",
+    "RelativePath": "lojas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodosEntregaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodosEntrega\u003Eb__0_0",
+    "RelativePath": "metodos-entrega/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[megev.Models.MetodoEntrega, ApiMegev, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodosEntregaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodosEntrega\u003Eb__0_2",
+    "RelativePath": "metodos-entrega/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "metodoEntrega",
+        "Type": "megev.Models.MetodoEntrega",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.MetodoEntrega",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodosEntregaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodosEntrega\u003Eb__0_1",
+    "RelativePath": "metodos-entrega/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.MetodoEntrega",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodosEntregaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodosEntrega\u003Eb__0_3",
+    "RelativePath": "metodos-entrega/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "metodoEntrega",
+        "Type": "megev.Models.MetodoEntrega",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodosEntregaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodosEntrega\u003Eb__0_4",
+    "RelativePath": "metodos-entrega/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodoPagamentoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodoPagamento\u003Eb__0_0",
+    "RelativePath": "metodos-pagamento/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[megev.Models.MetodoPagamento, ApiMegev, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodoPagamentoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodoPagamento\u003Eb__0_2",
+    "RelativePath": "metodos-pagamento/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "metodoPagamento",
+        "Type": "megev.Models.MetodoPagamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.MetodoPagamento",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodoPagamentoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodoPagamento\u003Eb__0_1",
+    "RelativePath": "metodos-pagamento/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.MetodoPagamento",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodoPagamentoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodoPagamento\u003Eb__0_3",
+    "RelativePath": "metodos-pagamento/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "metodoPagamento",
+        "Type": "megev.Models.MetodoPagamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.MetodoPagamentoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsMetodoPagamento\u003Eb__0_4",
+    "RelativePath": "metodos-pagamento/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ObjetivoLojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsObjetivoLoja\u003Eb__0_0",
+    "RelativePath": "Objetivo-Loja/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[megev.Models.ObjetivoLoja, ApiMegev, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ObjetivoLojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsObjetivoLoja\u003Eb__0_2",
+    "RelativePath": "Objetivo-Loja/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objetivoLoja",
+        "Type": "megev.Models.ObjetivoLoja",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.ObjetivoLoja",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ObjetivoLojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsObjetivoLoja\u003Eb__0_1",
+    "RelativePath": "Objetivo-Loja/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.ObjetivoLoja",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ObjetivoLojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsObjetivoLoja\u003Eb__0_3",
+    "RelativePath": "Objetivo-Loja/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "objetivoLoja",
+        "Type": "megev.Models.ObjetivoLoja",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ObjetivoLojaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsObjetivoLoja\u003Eb__0_4",
+    "RelativePath": "Objetivo-Loja/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsProdutos\u003Eb__0_0",
+    "RelativePath": "produtos/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsProdutos\u003Eb__0_2",
+    "RelativePath": "produtos/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "produto",
+        "Type": "megev.Models.Produto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsProdutos\u003Eb__0_1",
+    "RelativePath": "produtos/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "megev.Models.ProdutoDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsProdutos\u003Eb__0_3",
+    "RelativePath": "produtos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "produto",
+        "Type": "megev.Models.Produto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.ProdutoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsProdutos\u003Eb__0_4",
+    "RelativePath": "produtos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.UsuarioEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsUsuarios\u003Eb__0_4",
+    "RelativePath": "usuarios/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.UsuarioEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsUsuarios\u003Eb__0_5",
+    "RelativePath": "usuarios/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "usuarioDto",
+        "Type": "megev.Models.UsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.UsuarioEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsUsuarios\u003Eb__0_6",
+    "RelativePath": "usuarios/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.UsuarioEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsUsuarios\u003Eb__0_1",
+    "RelativePath": "usuarios/login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "megev.Models.UsuarioLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.UsuarioEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsUsuarios\u003Eb__0_2",
+    "RelativePath": "usuarios/logout",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.UsuarioEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsUsuarios\u003Eb__0_3",
+    "RelativePath": "usuarios/me",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "megev.Endpoints.UsuarioEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CRegistrarEndpointsUsuarios\u003Eb__0_0",
+    "RelativePath": "usuarios/registrar",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioDto",
+        "Type": "megev.Models.UsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
