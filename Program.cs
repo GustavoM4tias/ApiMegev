@@ -58,9 +58,6 @@ public class Program
 
         var app = builder.Build();
 
-            
-            
-            app.Urls.Add("http://*:8080"); // Configure a porta que a aplicação irá escutar
             app.UseSwagger();
             app.UseSwaggerUI();
    
