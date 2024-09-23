@@ -11,29 +11,29 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // ConfiguraÁ„o do Swagger
+        // Configura√ß√£o do Swagger
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
-        // ConfiguraÁ„o CORS (Permitir que qualquer site use a API)
+        // Configura√ß√£o CORS (Permitir que qualquer site use a API)
         builder.Services.AddCors(options =>
         {
             options.AddDefaultPolicy(policy =>
             {
                 policy.AllowAnyOrigin()   // Permite qualquer origem
-                      .AllowAnyMethod()   // Permite qualquer mÈtodo (GET, POST, etc.)
-                      .AllowAnyHeader();  // Permite qualquer cabeÁalho
+                      .AllowAnyMethod()   // Permite qualquer m√©todo (GET, POST, etc.)
+                      .AllowAnyHeader();  // Permite qualquer cabe√ßalho
             });
         });
 
-        // ConfiguraÁ„o do DbContext
+        // Configura√ß√£o do DbContext
         builder.Services.AddDbContext<MegevDbContext>(options =>
         {
             options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
                              ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection")));
         });
 
-        // ConfiguraÁ„o do JWT
+        // Configura√ß√£o do JWT
         var jwtSettings = builder.Configuration.GetSection("JwtSettings");
         var secretKey = Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]);
 
@@ -49,21 +49,23 @@ public class Program
                     ValidIssuer = jwtSettings["Issuer"],
                     ValidAudience = jwtSettings["Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(secretKey),
-                    ClockSkew = TimeSpan.Zero // Sem atraso na expiraÁ„o do token
+                    ClockSkew = TimeSpan.Zero // Sem atraso na expira√ß√£o do token
                 };
             });
 
-        // ConfiguraÁ„o da AutorizaÁ„o
+        // Configura√ß√£o da Autoriza√ß√£o
         builder.Services.AddAuthorization();
 
         var app = builder.Build();
 
-
+            
+            
+            app.Urls.Add("http://*:8080"); // Configure a porta que a aplica√ß√£o ir√° escutar
             app.UseSwagger();
             app.UseSwaggerUI();
    
 
-        app.UseCors(); // Aplicar a configuraÁ„o de CORS
+        app.UseCors(); // Aplicar a configura√ß√£o de CORS
         app.UseAuthentication();
         app.UseAuthorization();
 
@@ -76,6 +78,9 @@ public class Program
         app.RegistrarEndpointsLoja();
         app.RegistrarEndpointsCategoriaProduto();
 
-        app.Run();
+        app.Run(async (context) =>
+        {
+            await context.Response.WriteAsync("API est√° rodando!");
+        });    
     }
 }
