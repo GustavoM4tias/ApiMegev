@@ -20,6 +20,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/out .
 
+# Expor a porta
+EXPOSE 80
+
 # Definir o comando para iniciar a aplicação
 ENTRYPOINT ["dotnet", "ApiMegev.dll"]
-
