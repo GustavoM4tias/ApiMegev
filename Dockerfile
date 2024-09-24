@@ -1,27 +1,19 @@
-# Usar a imagem base do .NET SDK para 8.0
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-
-# Definir o diretório de trabalho
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-
-# Copiar csproj e restaurar dependências
-COPY *.csproj ./
-RUN dotnet restore
-
-# Copiar o restante do código
-COPY . ./
-
-# Construir a aplicação
-RUN dotnet publish -c Release -o out
-
-# Usar a imagem base do .NET Runtime para 8.0
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
-
-WORKDIR /app
-COPY --from=build /app/out .
-
-# Expor a porta
 EXPOSE 80
 
-# Definir o comando para iniciar a aplicação
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+COPY ["ApiMegev.csproj", "./"]
+RUN dotnet restore "./ApiMegev.csproj"
+COPY . .
+WORKDIR "/src/."
+RUN dotnet build "ApiMegev.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "ApiMegev.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ApiMegev.dll"]
