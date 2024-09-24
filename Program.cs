@@ -57,7 +57,11 @@ public class Program
         builder.Services.AddAuthorization();
 
         var app = builder.Build();
-
+        
+            // Configura a aplicação para escutar na porta definida
+            var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+            app.Urls.Add($"http://0.0.0.0:{port}");
+        
             app.UseSwagger();
             app.UseSwaggerUI();
    
